@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rtmod",
+	"version": "${version}",
+	"name": "RT mod",
+	"description": "irusurt's first minecraft mod!",
+	"authors": [
+		"irusurt"
+	],
+	"contact": {
+		"homepage": "https://irusurt.neocities.org/",
+		"sources": "NONE"
+	},
+	"license": "MIT",
+	"icon": "assets/rtmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"irusurt.rtmod.RTMod"
+		],
+		"fabric-datagen": [
+			"irusurt.rtmod.RTModDataGenerator"
+		],
+    "client": [
+      "irusurt.rtmod.RTModClient"
+    ]
+	},
+	"mixins": [
+		"rtmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
