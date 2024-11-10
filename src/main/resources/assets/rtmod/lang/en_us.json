@@ -1,5 +1,9 @@
 {
-  "item.rtmod.snail_shell": "Snail Shell",
+  "itemgroup.rtmod.rtmod_items": "RTMod items",
 
-  "block.rtmod.fossil_block": "Fossil"
+  "item.rtmod.snail_shell": "Snail Shell",
+  "item.rtmod.fossil_shard": "Fossil Shard",
+
+  "block.rtmod.fossil_block": "Fossil Gathering",
+  "block.rtmod.reconstructed_fossil_block": "Reconstructed Fossil"
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "i#i"
+  ],
+  "category": "building",
+  "key": {
+    "#": {"item": "rtmod:fossil_shard"},
+    "i": {"item":  "minecraft:iron_ingot"}
+  },
+  "result": {
+    "count": 1,
+    "id": "rtmod:reconstructed_fossil_block"
+  }
+}

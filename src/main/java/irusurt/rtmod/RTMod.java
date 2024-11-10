@@ -24,6 +24,8 @@ public class RTMod implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 
+    ModItemsGroup.registerItemGroups();
+    
     ModItems.registerModItems();
     ModBlocks.registerModBlocks();
 	}

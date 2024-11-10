@@ -13,8 +13,11 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-  private static final Block FOSSIL_BLOCK = registerBlock("fossil_block",
-    new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.BONE))
+  public static final Block FOSSIL_BLOCK = registerBlock("fossil_block",
+    new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.GRAVEL))
+  );
+  public static final Block RECONSTRUCTED_FOSSIL_BLOCK = registerBlock("reconstructed_fossil_block",
+    new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.BONE))
   );
 
   private static Block registerBlock(String name, Block block) {
@@ -32,6 +35,7 @@ public class ModBlocks {
 
     ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
       entries.add(ModBlocks.FOSSIL_BLOCK); 
+      entries.add(ModBlocks.RECONSTRUCTED_FOSSIL_BLOCK);
     });
   }
 }

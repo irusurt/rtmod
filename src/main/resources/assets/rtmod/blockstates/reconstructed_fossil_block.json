@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rtmod:block/reconstructed_fossil_block"
+    }
+  }
+}
